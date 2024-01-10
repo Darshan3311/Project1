@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff5e62, #4d5ed4, #ff7e5f);
+            background-size: 200% 200%;
+            animation: gradientBG 10s infinite alternate;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        section {
+            padding: 50px;
+            color: white;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .button:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: scale(1.1);
+        }
+
+        #about {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Darshan Jadhav</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am Darshan Jadhav,m persuing TYBCA from KVN Naik college nashik,
+            I want to become a WEB Developer in MNC, I am passionate about Web develpoment.
+        I have full command on HTML and CSS to make website effective. </p>
+    </section>
+
+    <section>
+        <h2>Portfolio</h2>
+        <button class="button">Project 1</button>
+        <button class="button">Project 2</button>
+        <button class="button">Project 3</button>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <button class="button">Email</button>
+        <button class="button">LinkedIn</button>
+        <button class="button">GitHub</button>
+    </section>
+
+    <footer>
+        &copy; 2024 Your Portfolio
+    </footer>
+</body>
+</html>
